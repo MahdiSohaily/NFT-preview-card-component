@@ -6,17 +6,10 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+* {
   margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -49,14 +42,6 @@ picture {
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -70,6 +55,133 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-size: 16x;
+  font-family: "Outfit", sans-serif;
+}
+
+.text-blue {
+  color: hsl(215deg, 51%, 70%);
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+.text-white:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.card {
+  max-width: 18.8rem;
+  display: inline;
+  background-color: hsl(216deg, 50%, 16%);
+  padding: calc(5px + 1rem);
+  border-radius: 0.75rem;
+}
+.card header {
+  background-color: rebeccapurple;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.card header .overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 100%;
+  overflow: hidden;
+  background-color: hsla(178deg, 100%, 50%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.card header .card-img {
+  border-radius: 0.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.card header:hover .overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.card .primary-header {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-block: 1.25rem;
+}
+.card .primary-header:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+.card .desc {
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+.card .tag {
+  margin-block: 1rem;
+}
+.card .tag,
+.card .time,
+.card .brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.card .tag img,
+.card .time img,
+.card .brand img {
+  padding-right: 0.4rem;
+}
+.card .brand {
+  color: hsl(178deg, 100%, 50%);
+}
+.card .time {
+  color: hsl(215deg, 51%, 70%);
+}
+
+footer {
+  border-top: 1px solid hsl(215deg, 32%, 27%);
+  padding-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 14px;
+}
+footer .profile {
+  background-image: url("../../public/images/image-avatar.png");
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
