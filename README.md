@@ -18,21 +18,19 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
-- Screenshot of the challenge
-![Challenge Screenshot](./design/desktop-preview.jpg)
-- Screenshot of the solution
-![Solution Screenshot](./design/card.png)
+
+| Desktop version                              |               Mobile Version                |
+| -------------------------------------------- | :-----------------------------------------: |
+| ![Solution Screenshot](./design/desktop.png) | ![Solution Screenshot](./design/mobile.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://mahdisohaily.github.io/NFT-preview-card-component/index.html)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-uUFS_ntPQ4](https://www.frontendmentor.io/solutions/nft-preview-card-component-uUFS_ntPQ4)
+- Live Site URL: [Add live site URL here](https://mahdisohaily.github.io/NFT-preview-card-component/)
 
 ## My process
 
